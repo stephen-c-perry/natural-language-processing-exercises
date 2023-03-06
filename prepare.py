@@ -2,23 +2,18 @@
 import unicodedata
 import re
 import json
-
-#natural language toolkit -> tokenization, stopwords
 import nltk
+
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 nltk.download('wordnet')
 nltk.download('stopwords')
 nltk.download('omw-1.4')
 
-#standard ds imports
 import pandas as pd
 from time import strftime
 from requests import get
 from bs4 import BeautifulSoup
-
-#custom import
-import acquire
 
 #ignore warnings import
 import warnings

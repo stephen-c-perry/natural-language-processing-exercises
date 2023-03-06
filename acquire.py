@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 
 
-def get_blog_articles_data(refresh=False):
+def get_blogs(refresh=False):
     
     if not os.path.isfile('blog_articles.csv') or refresh:
         
@@ -38,7 +38,7 @@ def get_blog_articles_data(refresh=False):
 
 
 
-def get_news_articles_data(refresh=False):
+def get_news(refresh=False):
 
     if not os.path.isfile('news_articles.csv') or refresh:
         

@@ -11,7 +11,6 @@ from wordcloud import WordCloud
 
 
 
-#Define function to clean up text data
 def clean(text, ADDITIONAL_STOPWORDS = ['r', 'u', '2', 'ltgt']):
     
     wnl = nltk.stem.WordNetLemmatizer()
@@ -46,12 +45,11 @@ def create_bigrams(text):
 
 
 
-
 def create_wordcloud(text):
   
     wc = WordCloud(background_color="white", max_words=200, contour_width=3, contour_color='steelblue')
     wc.generate(text)
-    
+
     plt.imshow(wc, interpolation='bilinear')
     plt.axis("off")
     plt.show()
